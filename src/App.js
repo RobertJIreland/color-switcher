@@ -8,12 +8,9 @@ function App() {
     <div className= {`react-root ${color}`}>
       <div className='centered'>
         <h1>Color Picker</h1>
-        <ColorChangeButton />
-        <ColorChangeButton />
-        <ColorChangeButton />
-        <button className='red' onClick={() => setColor('red')}>red</button>
-        <button className='blue' onClick={() => setColor('blue')}>blue</button>
-        <button className='yellow' onClick={() => setColor('yellow')}>yellow</button>
+        <ColorChangeButton color='red' setColor={setColor} />
+        <ColorChangeButton color='blue' setColor={setColor} />
+        <ColorChangeButton color='yellow' setColor={setColor} />
       </div>
     </div>
   );
